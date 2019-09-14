@@ -1,0 +1,28 @@
+html {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.button {
+    display: block;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(21, 201, 201);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.button:hover {
+    transition: .4s;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.26);
+    border: 1px solid #FFF;
+}
+
+#resultPoll {
+    height: 25px;
+    width: 200px;
+    background-color: blue;
+}

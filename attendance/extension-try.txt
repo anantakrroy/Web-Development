@@ -1,0 +1,9 @@
+attendance cum feedback extension
+
+	attendance = attended / not attended
+	feedback = positive / negative
+
+attendance - percentage present
+	   - student total attendance record
+
+feedback - positive + neutral + negative

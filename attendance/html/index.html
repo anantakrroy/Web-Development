@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Attendance & Feedback form</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/attendance.js" type="text/javascript"></script>
+    <script src="../js/dropdownFill.js" type="text/javascript"></script>
+    <script src="../js/rangeSlider.js" type="text/javascript"></script>
+    <script src="../js/submitEmail.js" type="text/javascript"></script>
+    <script src="../js/rating.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h2>Attendance and Feedback Form</h2>
+    <div id="emailSection">
+        <label for="emailId">Choose your email</label>
+        <select id="fillEmail" onclick="populateDropDown()"></select>
+        <input type="button" id="submitAttendance" value="Mark Attendance" onclick="submitEmail()">
+    </div>
+    <hr>
+    <div id="ratingSection">
+        <h4>Instructor rating</h4>
+        <input id="rangeSlider" type="range" value="5" min="0" max="10" name="rating" onchange="sliderValue()">
+        <p><span id="sliderValue">5</span></p>
+        <input type="button" id="submitRating" value="Rate" onclick="submitRating()">
+    </div>
+    <hr>
+
+
+</body>
+
+</html>

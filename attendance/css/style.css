@@ -1,0 +1,28 @@
+html {
+    width: 75%;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+}
+
+input[type="range"] {
+    width: 250px;
+    background-color: #138805;
+    border-radius: 0;
+    margin: 10px;
+    opacity: 0.6;
+}
+
+::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, red,yellow, green);
+}
+
+::-webkit-slider-thumb {
+   background: transparent;
+}
+
+#rangeSlider:hover {
+    opacity: 1;
+}
