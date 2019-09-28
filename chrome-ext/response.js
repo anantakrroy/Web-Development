@@ -4,7 +4,6 @@ function getResponse() {
         if (userResponse[i].checked) {
             document.querySelector('button').disabled = true;
             document.querySelector('form').hidden = true;
-            addWaitGreet();
             console.log(userResponse[i].value);
         }
     }
@@ -30,6 +29,7 @@ function timerStart() {
     function countdown() {
         if (width <= 0) {
             clearInterval(timerInterval);
+            document.getElementsByClassName("progress").hidden = true;
         } else {
             width -= 5;
             duration--;
@@ -40,15 +40,9 @@ function timerStart() {
     }
 }
 
-function destroyButton() {
+function hideButtonShowMessage() {
     var startBtn = document.querySelector('button');
-    startBtn.remove();
-}
-
-function addWaitGreet() {
-    var infoPara = document.createElement('div');
-    var infoParaText = document.createTextNode("Waiting for all responses...");
-    infoPara.appendChild(infoParaText);
-    var infoPosition = document.getElementsByClassName('row')[2].childNodes[1].childNodes[1].childNodes[0];
-    infoPara.insertBefore(infoPara, infoPosition);
+    var waitMsg = document.querySelector('p');
+    startBtn.hidden = true;
+    waitMsg.hidden = false;
 }

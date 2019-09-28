@@ -21,38 +21,25 @@
 
 </head>
 
-<body onload="timerStart()">
+<body>
     <div class="row">
         <div class="col-lg-6 mx-auto my-5">
             <div class="card">
                 <div class="card-body">
-                    <div class="progress my-3" style="height: 25px">
-                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="20"
-                            aria-valuemin="0" aria-valuemax="20">20s</div>
-                    </div>
-                    <h2>Do you understand the concept?</h2>
-                    <br>
                     <div class="row">
-                        <div class="col-lg-8">
-                            <form>
-                                <input type="radio" name="userResponse" class="mx-2" value="Yes"
-                                    onclick="enableSubmit()"><label class="mr-5">Yes</label>
-
-                                <input type="radio" name="userResponse" class="mx-2" value="No"
-                                    onclick="enableSubmit()"><label>No</label>
-                            </form>
-
+                        <div class="col-xs-3 mx-auto my-3">
+                            <h1>Student Poll</h1>
                         </div>
                     </div>
+                    <hr class="mb-5">
                     <div class="row">
-                        <div class="col-xs-3 mx-auto">
-                            <p class="h3 font-weight-light" hidden>Waiting for all responses...</p>
+                        <div class="col-xs-5 mx-auto">
+                            <button type="button" class="btn btn-primary"
+                                onclick="">Create Room</button>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 ">
-                            <button disabled type="submit" class="btn btn-primary" id="btnRow"
-                                onclick="getResponse(); hideButtonShowMessage()">Submit</button>
+                        <div class="col-xs-5 mx-auto">
+                            <button type="button" class="btn btn-success"
+                                onclick="">Join Room</button>
                         </div>
                     </div>
                 </div>
