@@ -1,0 +1,9 @@
+response extension
+
+backend
+
+1. gather response from multiple users across the web
+2. store the information in a database/table
+3. on poll close, calculate the db result
+4. send the result to admin.
+5. present info on UI.
