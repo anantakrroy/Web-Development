@@ -1,0 +1,22 @@
+.card {
+    margin: 10px 20px;
+}
+
+div #header-img{
+    opacity: 0.2;
+    width: 100%;
+    height: auto;
+}
+
+input {
+    border-radius: 10px;
+    border-color: rgb(65, 39, 5);
+    height: 40px;
+}
+
+button {
+    border: rgb(65, 39, 5);
+    border-radius: 10px;
+    height: 40px;
+    background-color: rgb(228, 169, 92);;
+}
